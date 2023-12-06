@@ -52,8 +52,4 @@ public class Question {
 		return "Question [id=" + id + ", question=" + question + ", options=" + Arrays.toString(options) + ", answer="
 				+ answer + "]";
 	}
-
-	
-
-	
 }

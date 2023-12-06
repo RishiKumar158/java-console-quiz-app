@@ -23,9 +23,6 @@ public class QuestionService {
 			Scanner sc = new Scanner(System.in);
 			selections[i++] = sc.nextLine();
 		}
-		for(String selection: selections) {
-			System.out.println(selection);
-		}
 	}
 
 	public void printScore() {
