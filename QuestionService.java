@@ -14,15 +14,16 @@ public class QuestionService {
 	}
 
 	public void playQuiz() {
+		Scanner sc = new Scanner(System.in);
 		int i = 0;
 		for(Question question: questions){
 			System.out.println(question.getQuestion());
 			for(String option: question.getOptions()) {
 				System.out.println(option);
 			}
-			Scanner sc = new Scanner(System.in);
 			selections[i++] = sc.nextLine();
 		}
+		sc.close();
 	}
 
 	public void printScore() {
